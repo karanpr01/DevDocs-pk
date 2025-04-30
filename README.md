@@ -1,2 +1,2 @@
 #live site link
-[DevDocs](devdocs-pk.netlify.app)
+[DevDocs](https://devdocs-pk.netlify.app/)
