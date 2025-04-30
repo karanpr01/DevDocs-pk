@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Cheat Sheet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="html-style.css">
+
+    <!-- Prismjs -->
+
+    <link id="prism-theme" href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <a href="#" class="logo">
+                <h3 class="brand-logo">Dev<span class="small">Docs</span></h3>
+            </a>
+
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+
+            <div class="nav__link hide">
+                <a href="index.html">Home</a>
+                <a href="#">about</a>
+                <li class="dropdown">
+                    <a href="#">CHEATSHEET</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="html-page.html">HTML Cheatsheet</a></li>
+                        <li><a href="#">CSS Cheatsheet</a></li>
+                        <li><a href="#">JS Cheatsheet</a></li>
+                    </ul>
+                </li>
+
+                <button id="theme-switch">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px">
+                        <path
+                            d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z">
+                        </path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px">
+                        <path
+                            d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z">
+                        </path>
+                    </svg>
+                </button>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="hero-2">
+            <img src="assest/html-5.svg" alt="html-img">
+            <h1>HTML cheat sheet</h1>
+            <p>A Quick Reference guide for HTML elements, Showcasing example usage and common use case.</p>
+        </div>
+
+
+
+        <div class="main">
+            <div class="content">
+                <h2>1. What is Html?</h2>
+                <p>HTML(Hyper Text Markup Language) is the standard language for creating Webpages. It defines the
+                    Structure of content, while css and javascript handle styling ans behavior.</p>
+            </div>
+
+            <div class="content">
+                <h2>2. Basic HTML Structure</h2>
+
+                <pre class="line-numbers"><code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello World&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+          </code></pre>
+
+            </div>
+
+            
+            <div class="content">
+                <h2>3. Common HTML and their use cases</h2>
+                <p>Heading tags &lt;h1&gt; to &lt;h6&gt;</p>
+
+                <pre class="line-numbers"><code class="language-html">
+&lt;h1&gt;Main Title &lt;/h1&gt;
+&lt;h2&gt;Section Title &lt;/h2&gt;
+&lt;h3&gt;Subsection Title &lt;/h3&gt;
+</code></pre>
+            <ul>
+                <li>Structuring title and subtitles.</li>
+                <li>SEO Tips: use only one &lt;h1&gt; per page. </li>
+            </ul>
+            <br>
+            <hr>
+            <br>
+
+            <p>Paragraph Tag &lt;p&gt;</p>
+
+            <pre class="line-numbers"><code class="language-html">
+&lt;p&gt;This is Paragraph text &lt;/p&gt;
+</code></pre>
+        <ul>
+            <li>Writing Regular text</li>
+        </ul>
+
+        <br>
+            <hr>
+            <br>
+
+            <p>Anchor Tag &lt;a&gt;</p>
+
+            <pre class="line-numbers"><code class="language-html">
+&lt;a href="https://example.com" target="_blank"&gt; Visit example &lt;/p&gt;
+</code></pre>
+        <ul>
+            <li>Creating Links</li>
+            <li>traget="_blank" opens links in new tab.</li>
+        </ul>
+
+        <br>
+            <hr>
+            <br>
+
+            <p>Image Tag &lt;img&gt;</p>
+
+            <pre class="line-numbers"><code class="language-html">
+&lt;img src="image.png" alt="Description of image width="300"&gt; 
+</code></pre>
+        <ul>
+            <li>Adding images.</li>
+            <li>Always add alt for accessibility.</li>
+        </ul>
+
+        <br>
+            <hr>
+            <br>
+
+            <p>List Tags &lt;ol&gt;, &lt;ul&gt;, &lt;li-&gt;</p>
+
+            <pre class="line-numbers"><code class="language-html">
+&lt;ul&gt;
+&lt;li&gt;First item&lt;/li&gt;
+&lt;li&gt;Secong item&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+&lt;li&gt;First item&lt;/li&gt;
+&lt;li&gt;Secong item&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre>
+        <ul>
+            <li>&lt;ul&gt;=Unordered (bullets).</li>
+            <li>&lt;ol&gt;=Ordered (numbers).</li>
+        </ul>
+
+        <br>
+            <hr>
+            <br>
+
+            <p>Table Tags &lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, &lt;td&gt;</p>
+
+            <pre class="line-numbers"><code class="language-html">
+&lt;table&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Age&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Jhon&lt;/td&gt;
+&lt;td&gt;30&lt;/td&gt;
+&lt;/table&gt;
+</code></pre>
+        <ul>
+            <li>Dispalyin tabular data.</li>
+        </ul>
+
+        <br>
+            <hr>
+            <br>
+
+            
+            <p>Form Tags </p>
+
+            <pre class="line-numbers"><code class="language-html">
+&lt;form action="/submit" methond="POST"&gt;
+&lt;input type="text" name="username" placeholder="Enter Username"&gt;
+&lt;input type="password" name="password" placeholder="Enter password"&gt;
+&lt;button type="submit"&gt;Submit&lt;/button&gt;
+</code></pre>
+        <ul>
+            <li>Collecting User Inputs.</li>
+        </ul>
+
+        <br>
+            <hr>
+            <br>
+
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+    </main>
+    <footer>
+        <div class="logo">
+            <a href="#" class="logo">
+                <h3 class="brand-logo">Dev<span class="small-footer">Docs</span></h3>
+            </a>
+        </div>
+        <div class="links">
+            <h3>Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>About</li>
+                <li><a href="html-page.html">HTML Cheat Sheet</a></li>
+                <li>CSS Cheat Sheet</li>
+                <li>JS Cheat Sheet</li>
+            </ul>
+        </div>
+      </footer>
+
+</body>
+<script src="script.js"></script>
+
+<!-- prismjs -->
+ <!-- main -->
+<script src="https://cdn.jsdelivr.net/npm/prismjs/prism.min.js"></script>
+<!-- For html -->
+<script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-html.min.js"></script>
+<!-- For css -->
+<script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-css.min.js"></script>
+<!-- For js -->
+<script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-javascript.min.js"></script>
+
+
+</html>
+
+
+<!-- 
+
+how to use them
+
+<pre><code class="language-html">
+ your HTML code here 
+</code></pre>
+
+<pre><code class="language-css">
+ your CSS code here 
+</code></pre>
+
+<pre><code class="language-javascript">
+ your JS code here
+</code></pre>
+
+-->

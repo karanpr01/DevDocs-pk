@@ -1,0 +1,23 @@
+main{
+    margin: 24px;
+    color: var(--heading-text);
+}
+
+.hero-2{
+    text-align: center;
+    margin: 24px;
+    /* padding: 10px; */
+}
+
+.hero-2 p{
+    padding: 10px;
+}
+
+
+.content{
+    padding:10px;
+}
+
+
+
+   
