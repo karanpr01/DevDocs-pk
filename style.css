@@ -470,7 +470,7 @@ footer{
   background-color: var(--footer-bg);
   margin-top: 45px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   color: white;
