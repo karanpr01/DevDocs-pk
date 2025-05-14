@@ -37,7 +37,7 @@
                     <a href="#">CHEATSHEET</a>
                     <ul class="dropdown-menu">
                         <li><a href="html-page.html">HTML Cheatsheet</a></li>
-                        <li><a href="css-page.html">CSS Cheatsheet</a></li>
+                        <li><a href="#">CSS Cheatsheet</a></li>
                         <li><a href="#">JS Cheatsheet</a></li>
                     </ul>
                 </li>
@@ -60,276 +60,165 @@
     </header>
     <main>
         <div class="hero-2">
-            <img src="assest/html-5.svg" alt="html-img">
-            <h1>HTML cheat sheet</h1>
-            <p>A Quick Reference guide for HTML elements, Showcasing example usage and common use case.</p>
+            <img src="assest/css.svg" alt="css-img">
+            <h1>CSS Cheat Sheet for Quick Reference</h1>
+       
         </div>
 
 
 
         <div class="main">
             <div class="content"  data-aos="zoom-in"  data-aos-duration="1500"   data-aos-easing="ease-in-sine"  >
-                <h2>1. What is Html?</h2>
-                <p>HTML(Hyper Text Markup Language) is the standard language for creating Webpages. It defines the
-                    Structure of content, while css and javascript handle styling ans behavior.</p>
+                <h2>1. What is CSS?</h2><br>
+               <ul><br>
+                <li>
+                    CSS (Cascading Style Sheets) is used to style and layout web pages — like changing colors, fonts, spacing, etc.
+                </li><br>
+                <li>
+                    Works alongside HTML to create visually attractive websites.
+                </li><br>
+               </ul>
             </div>
 
             <div class="content" data-aos="fade-right"  data-aos-duration="1600"   data-aos-easing="ease-in-sine">
-                <h2>2. Basic HTML Structure</h2>
+                <h2>2. How to Add CSS</h2>
+                <br>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Method</th>
+                            <th>Syntax</th>
+                            <th>Use Case</th>
+                        </tr>
+                        <tr>
+                            <td>Inline CSS</td>
+                            <td>
+                                <pre><code class="language-css">
+&lt;h1 style="color:red;"&gt;Hello&lt;/h1&gt;
+</code></pre>
+                            </td>
+                            <td>Quick styling for single elements</td>
+                        </tr>
+                        <tr>
+                            <td>Internal CSS</td>
+                            <td>
+                            <pre><code class="language-css">
+&lt;style&gt;h1 { color: red; }&lt;/style&gt;
+</code></pre>
+                            </td>
+                            <td>Styling one HTML file</td>
+                        </tr>
+                        <tr>
+                            <td>External CSS</td>
+                            <td>
+                                <pre><code class="language-css">
+&lt;link rel="stylesheet" href="style.css"&gt;
+</code></pre>
+                            </td>
+                            <td>Best practice for larger websites</td>
+                        </tr>
+                    </tbody>
+                </table>
+ 
 
-                <pre class="line-numbers"><code class="language-html">
-&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-  &lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;h1&gt;Hello World&lt;/h1&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-          </code></pre>
 
             </div>
+            <br>
 
 
             <div class="content" data-aos="fade-left"  data-aos-duration="1500"   data-aos-easing="ease-in-sine">
-                <h2>3. Common HTML and their use cases</h2>
-                <p>Heading tags &lt;h1&gt; to &lt;h6&gt;</p>
-
-                <pre class="line-numbers"><code class="language-html">
-&lt;h1&gt;Main Title &lt;/h1&gt;
-&lt;h2&gt;Section Title &lt;/h2&gt;
-&lt;h3&gt;Subsection Title &lt;/h3&gt;
+                <h2>3. CSS Syntax Basics</h2>
+                <pre class="line-numbers"><code class="language-css">
+selector{
+    property: value;
+}
+</code></pre><br>
+                <p>Example:</p>
+                <pre class="line-numbers"><code class="language-css">
+p{
+    color: blue;
+    font-size: 16px;
+}
 </code></pre>
-                <ul>
-                    <li>Structuring title and subtitles.</li>
-                    <li>SEO Tips: use only one &lt;h1&gt; per page. </li>
-                </ul>
+              
                 <br>
-                <hr>
+              
                 <br>
-
-                <div  data-aos="zoom-in"  data-aos-duration="1500"   data-aos-easing="ease-in-sine">
-
-                <p>Paragraph Tag &lt;p&gt;</p>
-
-                <pre class="line-numbers"><code class="language-html">
-&lt;p&gt;This is Paragraph text &lt;/p&gt;
-</code></pre>
-                <ul>
-                    <li>Writing Regular text</li>
-                </ul>
-
-                <br>
-                <hr>
-                <br>
-                </div>
-                <div  data-aos="zoom-in-down"  data-aos-duration="1500"   data-aos-easing="ease-in-sine">
-
-                <p>Anchor Tag &lt;a&gt;</p>
-
-                <pre class="line-numbers"><code class="language-html">
-&lt;a href="https://example.com" target="_blank"&gt; Visit example &lt;/p&gt;
-</code></pre>
-                <ul>
-                    <li>Creating Links</li>
-                    <li>traget="_blank" opens links in new tab.</li>
-                </ul>
-
-                <br>
-                <hr>
-                <br>
-                </div>
-                <div  data-aos="zoom-in-right"  data-aos-duration="1500"   data-aos-easing="ease-in-sine">
-
-                <p>Image Tag &lt;img&gt;</p>
-
-                <pre class="line-numbers"><code class="language-html">
-&lt;img src="image.png" alt="Description of image width="300"&gt; 
-</code></pre>
-                <ul>
-                    <li>Adding images.</li>
-                    <li>Always add alt for accessibility.</li>
-                </ul>
-
-                <br>
-                <hr>
-                <br>
-                </div>
-                <div  data-aos="zoom-in-left"  data-aos-duration="1500"   data-aos-easing="ease-in-sine">
-
-                <p>List Tags &lt;ol&gt;, &lt;ul&gt;, &lt;li-&gt;</p>
-
-                <pre class="line-numbers"><code class="language-html">
-&lt;ul&gt;
-&lt;li&gt;First item&lt;/li&gt;
-&lt;li&gt;Secong item&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol&gt;
-&lt;li&gt;First item&lt;/li&gt;
-&lt;li&gt;Secong item&lt;/li&gt;
-&lt;/ol&gt;
-</code></pre>
-                <ul>
-                    <li>&lt;ul&gt;=Unordered (bullets).</li>
-                    <li>&lt;ol&gt;=Ordered (numbers).</li>
-                </ul>
-
-                <br>
-                <hr>
-                <br>
-                </div>
-                <div  data-aos="zoom-in"  data-aos-duration="1500"   data-aos-easing="ease-in-sine">
-
-                <p>Table Tags &lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, &lt;td&gt;</p>
-
-                <pre class="line-numbers"><code class="language-html">
-&lt;table&gt;
-&lt;tr&gt;
-&lt;th&gt;Name&lt;/th&gt;
-&lt;th&gt;Age&lt;/th&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Jhon&lt;/td&gt;
-&lt;td&gt;30&lt;/td&gt;
-&lt;/table&gt;
-</code></pre>
-                <ul>
-                    <li>Dispalyin tabular data.</li>
-                </ul>
-
-                <br>
-                <hr>
-                <br>
-                </div>
-                <div  data-aos="zoom-in-down"  data-aos-duration="1500"   data-aos-easing="ease-in-sine">
-
-
-                <p>Form Tags </p>
-
-                <pre class="line-numbers"><code class="language-html">
-&lt;form action="/submit" methond="POST"&gt;
-&lt;input type="text" name="username" placeholder="Enter Username"&gt;
-&lt;input type="password" name="password" placeholder="Enter password"&gt;
-&lt;button type="submit"&gt;Submit&lt;/button&gt;
-</code></pre>
-                <ul>
-                    <li>Collecting User Inputs.</li>
-                </ul>
-
-                <br>
-                <hr>
-                <br>
-                </div>
+            
             </div>
 
 
             <div class="content" data-aos="fade-right"  data-aos-duration="1500"   data-aos-easing="ease-in-sine">
-                <h2>4. New HTML5 Tags</h2>
+                <h2>4. CSS Selectors</h2>
                 <table class="line-numbers">
                     <tbody>
                         <tr>
-                            <th>Tag</th>
-                            <th>Purpose</th>
+                            <th>Selector</th>
                             <th>Example</th>
+                            <th>Description</th>
                         </tr>
                         <tr>
+                            <td>Element Selector</td>
                             <td>
-                                <code class="language-html">
-                            &lt;header&gt;
+                                <code class="language-css">
+                            p{}
                         </code>
                             </td>
-                            <td>Top section of page</td>
-                            <td>Website logo, Navigation</td>
+                            <td>Targets &ltp&gt tags</td>
                         </tr>
                         <tr>
+                            <td>Class Selector</td>
                             <td>
-                                <code class="language-html">
-                            &lt;nav&gt;
+                                <code class="language-css">
+                            .classname {}
                         </code>
                             </td>
-                            <td>Navigations links</td>
-                            <td>Menus, Sidebars</td>
+                            <td>Targets elements with class="classname"</td>
                         </tr>
 
                         <tr>
+                             <td>ID Selector</td>
                             <td>
-                                <code class="language-html">
-                            &lt;main&gt;
+                                <code class="language-css">
+                            #idname{}
                         </code>
                             </td>
-                            <td>Main content area</td>
-                            <td>Articls, Blog Post</td>
+                            <td>Targets elements with id="idname"</td>
                         </tr>
 
                         <tr>
+                               <td>Universal selector</td>
                             <td>
-                                <code class="language-html">
-                            &lt;section&gt;
+                                <code class="language-css">
+                            *{}
                         </code>
                             </td>
-                            <td>Group of related content</td>
-                            <td>Different section of HomePage</td>
+                            <td>Targets all elements</td>
                         </tr>
 
                         <tr>
+                            <td>Grouping Selector</td>
                             <td>
-                                <code class="language-html">
-                            &lt;article&gt;
+                                <code class="language-css">
+                            h1,h2,p{}
                         </code>
                             </td>
-                            <td>StandAlone Content</td>
-                            <td>A Single Blog Post</td>
+                            <td>Style Multiple elements</td>
                         </tr>
 
                         <tr>
+                              <td>Descendant Selector</td>
                             <td>
-                                <code class="language-html">
-                            &lt;aside&gt;
+                                <code class="language-css">
+                            div p{}
                         </code>
                             </td>
-                            <td>Side Content</td>
-                            <td>Ads, Sidebars</td>
+                            <td>Targets &lt;p&gt; under &lt;div&gt;</td>
                         </tr>
-
-                        <tr>
-                            <td>
-                                <code class="language-html">
-                            &lt;footer&gt;
-                        </code>
-                            </td>
-                            <td>Bottom Section</td>
-                            <td>Copyright</td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                <code class="language-html">
-                            &lt;figure&gt;+ &lt;figcaption&gt;
-                        </code>
-                            </td>
-                            <td>Images with Captions</td>
-                            <td>Image Galleries</td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                <code class="language-html">
-                            &lt;audio&gt;/&lt;video&gt;
-                        </code>
-                            </td>
-                            <td>Media</td>
-                            <td>Background Music, Tutorial Video</td>
-                        </tr>
-
                     </tbody>
                 </table>
                 <br>
                 <br>
-                <hr>
 
             </div>
 
@@ -616,9 +505,9 @@
 <!-- main -->
 <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.min.js"></script>
 <!-- For html -->
-<script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-html.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-html.min.js"></script> -->
 <!-- For css -->
-<!-- <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-css.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-css.min.js"></script>
 <!-- For js -->
 <!-- <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-javascript.min.js"></script> -->
 
