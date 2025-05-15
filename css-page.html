@@ -62,25 +62,26 @@
         <div class="hero-2">
             <img src="assest/css.svg" alt="css-img">
             <h1>CSS Cheat Sheet for Quick Reference</h1>
-       
+
         </div>
 
 
 
         <div class="main">
-            <div class="content"  data-aos="zoom-in"  data-aos-duration="1500"   data-aos-easing="ease-in-sine"  >
+            <div class="content" data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-sine">
                 <h2>1. What is CSS?</h2><br>
-               <ul><br>
-                <li>
-                    CSS (Cascading Style Sheets) is used to style and layout web pages — like changing colors, fonts, spacing, etc.
-                </li><br>
-                <li>
-                    Works alongside HTML to create visually attractive websites.
-                </li><br>
-               </ul>
+                <ul><br>
+                    <li>
+                        CSS (Cascading Style Sheets) is used to style and layout web pages — like changing colors,
+                        fonts, spacing, etc.
+                    </li><br>
+                    <li>
+                        Works alongside HTML to create visually attractive websites.
+                    </li><br>
+                </ul>
             </div>
 
-            <div class="content" data-aos="fade-right"  data-aos-duration="1600"   data-aos-easing="ease-in-sine">
+            <div class="content" data-aos="fade-right" data-aos-duration="1600" data-aos-easing="ease-in-sine">
                 <h2>2. How to Add CSS</h2>
                 <br>
                 <table>
@@ -102,7 +103,7 @@
                         <tr>
                             <td>Internal CSS</td>
                             <td>
-                            <pre><code class="language-css">
+                                <pre><code class="language-css">
 &lt;style&gt;h1 { color: red; }&lt;/style&gt;
 </code></pre>
                             </td>
@@ -119,14 +120,14 @@
                         </tr>
                     </tbody>
                 </table>
- 
+
 
 
             </div>
             <br>
 
 
-            <div class="content" data-aos="fade-left"  data-aos-duration="1500"   data-aos-easing="ease-in-sine">
+            <div class="content" data-aos="fade-left" data-aos-duration="1500" data-aos-easing="ease-in-sine">
                 <h2>3. CSS Syntax Basics</h2>
                 <pre class="line-numbers"><code class="language-css">
 selector{
@@ -140,15 +141,15 @@ p{
     font-size: 16px;
 }
 </code></pre>
-              
+
                 <br>
-              
+
                 <br>
-            
+
             </div>
 
 
-            <div class="content" data-aos="fade-right"  data-aos-duration="1500"   data-aos-easing="ease-in-sine">
+            <div class="content" data-aos="fade-right" data-aos-duration="1500" data-aos-easing="ease-in-sine">
                 <h2>4. CSS Selectors</h2>
                 <table class="line-numbers">
                     <tbody>
@@ -177,7 +178,7 @@ p{
                         </tr>
 
                         <tr>
-                             <td>ID Selector</td>
+                            <td>ID Selector</td>
                             <td>
                                 <code class="language-css">
                             #idname{}
@@ -187,7 +188,7 @@ p{
                         </tr>
 
                         <tr>
-                               <td>Universal selector</td>
+                            <td>Universal selector</td>
                             <td>
                                 <code class="language-css">
                             *{}
@@ -207,7 +208,7 @@ p{
                         </tr>
 
                         <tr>
-                              <td>Descendant Selector</td>
+                            <td>Descendant Selector</td>
                             <td>
                                 <code class="language-css">
                             div p{}
@@ -223,262 +224,291 @@ p{
             </div>
 
 
-            <div class="content" data-aos="zoom-in"  data-aos-duration="1500"   data-aos-easing="ease-in-sine">
-                <h2>5. Input Types(HTML5 Forms)</h2>
+            <div class="content" data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-sine">
+                <h2>5. CSS Properties</h2>
+                <br>
+                <p>Text & Font</p>
+                <br>
 
-                <pre class="line-numbers"><code class="language-html">
-&lt;input type="email" placeholder="Enter your email"&gt;
-&lt;input type="date"&gt;
-&lt;input type="color"&gt;
-&lt;input type="range" min="0" max="100"&gt;
-   
+                <pre class="line-numbers"><code class="language-css">
+color:red;
+font-size:18px;
+font-weight:bold;
+font-family:'Arial', sans-serif;
+text-align: center;
+text-decoration: underline;
+text-transform: uppercase;
+letter-spacing: 2px;
+line-height: 1.5;   
           </code></pre>
-                <ul>
-                    <li>Collecting Specific type of user input.</li>
-                    <li>Browser auto-validates fields like email. </li>
-                </ul>
                 <br>
-                <hr>
+                <br>
+
+
+                <div data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-sine">
+                    <br>
+                    <p>Background</p>
+                    <br>
+                    <pre class="line-numbers"><code class="language-css">
+background-color: lightblue;
+background-image: url('image.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;  
+          </code></pre>
+                    <br>
+                    <br>
+                </div>
+
+
+                <div data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-sine">
+                    <br>
+                    <p>Box Model</p>
+                    <br>
+                    <pre class="line-numbers"><code class="language-css">
+margin: 20px;
+padding: 15px;
+border: 2px solid black;
+width: 300px;
+height: 200px;  
+          </code></pre>
+                    <br>
+                    <br>
+                </div>
+
+
+                <div data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-sine">
+                    <br>
+                    <p>Borders</p>
+                    <br>
+                    <pre class="line-numbers"><code class="language-css">
+border: 1px solid black;
+border-radius: 8px; 
+          </code></pre>
+                    <br>
+                    <br>
+                </div>
+
+
+
+                <div data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-sine">
+                    <br>
+                    <p>Display & Position</p>
+                    <br>
+                    <pre class="line-numbers"><code class="language-css">
+display: block;
+display: flex;
+position: relative;
+position: absolute;
+top: 20px;
+left: 10px;
+          </code></pre>
+                    <br>
+                    <br>
+                </div>
+
+
+
+                <div data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-sine">
+                    <br>
+                    <p>Flexbox</p>
+                    <br>
+                    <pre class="line-numbers"><code class="language-css">
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 10px;
+          </code></pre>
+                    <br>
+                    <br>
+                </div>
+
+
+
+                <div data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-sine">
+                    <br>
+                    <p>Grid</p>
+                    <br>
+                    <pre class="line-numbers"><code class="language-css">
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 10px;
+          </code></pre>
+                    <br>
+                    <br>
+                </div>
+
+
+
+                <div data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-sine">
+                    <br>
+                    <p>Others</p>
+                    <br>
+                    <pre class="line-numbers"><code class="language-css">
+opacity: 0.8;
+visibility: hidden;
+overflow: scroll;
+box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+transition: all 0.3s ease;  
+          </code></pre>
+                    <br>
+                    <br>
+                </div>
+
+            </div>
+
+
+            <div class="content" data-aos="fade-right" data-aos-duration="1500" data-aos-easing="ease-in-sine">
+                <br>
+                <h2>6. Pseudo-classes</h2>
+                <br>
+                <pre class="line-numbers"><code class="language-css">
+a:hover {
+  color: green;
+}
+
+input:focus {
+  border: 2px solid blue;
+}
+
+li:first-child {
+  color: red;
+}
+
+li:last-child {
+  color: green;
+}  
+          </code></pre>
+                <br>
+                <br>
+            </div>
+
+            <div class="content" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-sine">
+                <br>
+                <h2>7.Pseudo-elements</h2>
+                <br>
+                <pre class="line-numbers"><code class="language-css">
+p::first-letter {
+  font-size: 2em;
+}
+
+p::before {
+  content: 'Note: ';
+  color: red;
+}
+          </code></pre>
+
+                <br>
+                <br>
+            </div>
+
+
+            <div class="content" data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-in-sine">
+                <br>
+                <h2>8. Media Queries (Responsive Design)</h2>
+                <br>
+                <pre class="line-numbers"><code class="language-css">
+@media (max-width: 768px) {
+  body {
+    background-color: lightgrey;
+  }
+}
+          </code></pre>
+                <br>
+                <p>Use: Make your Website Mobile Friendly!</p>
+                <br>
+                <br>
+            </div>
+
+
+            <div class="content" data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-sine">
+                <br>
+                <h2>9. Important CSS Shorthand</h2>
+                <br>
+                <pre class="line-numbers"><code class="language-css">
+margin: 10px 20px 30px 40px; /* top right bottom left */
+padding: 20px;
+border: 1px solid red;
+background: url('img.jpg') no-repeat center/cover;
+font: italic small-caps bold 16px/2 Arial, sans-serif;
+          </code></pre>
+                <br>
                 <br>
 
             </div>
 
 
-            <div class="content" data-aos="fade-right"  data-aos-duration="1500"   data-aos-easing="ease-in-sine">
-                <h2>6. Semantic HTML</h2>
-                <p class="margin"></p>Sematic HTML=Correctly describing your content
-                </p>
-                <p class="margin">Example:</p>
-
-                <pre class="line-numbers"><code class="language-html">
-&lt;article&gt;
-&lt;h2&gt; Blog Post Title &lt;/h2&gt;
-&lt;p&gt;Post Content Here...&lt;/p&gt;
-&lt;/article&gt;
-</code></pre>
-                <h3 class="margin">Why Importan?</h3>
-                <ul>
-                    <li>Better SEO.</li>
-                    <li>Imporved accessibility.</li>
-                    <li>Clean Code.</li>
-                </ul>
+            <div class="content" data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-sine">
+                <h2>10. Modern CSS Features</h2>
                 <br>
-                <hr>
+                <p>Variables</p>
                 <br>
-            </div>
 
-            <div class="content" data-aos="fade-up"  data-aos-duration="1500"   data-aos-easing="ease-in-sine">
-                <h2>7. Meta Tags (SEO and Responsive Design)</h2>
-                <p class="margin"></p>Sematic HTML=Correctly describing your content
-                </p>
-                <p class="margin">Example:</p>
+                <pre class="line-numbers"><code class="language-css">
+:root {
+  --main-color: #3498db;
+}
 
-                <pre class="line-numbers"><code class="language-html">
-&lt;meta name="description" content="Learn HTML quickly with this cheat sheet!"&gt;
-&lt;meta name="keywords" content="HTML, web development, cheat sheet"&gt;
-&lt;meta name="author" content="Your Name"&gt;
-&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-</code></pre>
-                <ul>
-                    <li>Enhance SEO.</li>
-                    <li>Make your Website Mobile Responsive.</li>
-                </ul>
+h1 {
+  color: var(--main-color);
+}  
+          </code></pre>
                 <br>
-                <hr>
                 <br>
-            </div>
 
 
-            <div class="content" data-aos="zoom-out"  data-aos-duration="1500"   data-aos-easing="ease-in-sine">
-                <h2>8. Media Embedding</h2>
+                <div data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-sine">
+                    <br>
+                    <p>Clamp Function</p>
+                    <br>
+                    <pre class="line-numbers"><code class="language-css">
+font-size: clamp(1rem, 2.5vw, 2rem);  
+          </code></pre>
+                    <br>
+                    <br>
+                </div>
 
-                <p class="margin-top">video:</p>
-                <pre class="line-numbers"><code class="language-html">
-    &lt;video controls width="600"&gt;
-    &lt;source src="video.mp4" type="video/mp4"&gt;
-    Sorry, your browser doesn't support videos.
-    &lt;/video&gt;
-    </code></pre>
 
-                <p class="margin-top">Audio:</p>
-                <pre class="line-numbers"><code class="language-html">
-    &lt;audio controls&gt;
-    &lt;source src="audio.mp3" type="audio/mp3"&gt;
-    Sorry, your browser doesn't support audio.
-    &lt;/audio&gt;
-    </code></pre>
-
-                <br>
-                <hr>
-                <br>
+                <div data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-sine">
+                    <br>
+                    <p>Aspect Ratio</p>
+                    <br>
+                    <pre class="line-numbers"><code class="language-css">
+img {
+  aspect-ratio: 16 / 9;
+} 
+          </code></pre>
+                    <br>
+                    <br>
+                </div>
             </div>
 
             
-            <div class="content" data-aos="zoom-in"  data-aos-duration="1500"   data-aos-easing="ease-in-sine">
-                <h2>9. Best Practice</h2>
+            <div class="content" data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-sine">
+                <br>
+                <h2>11. Useful Tips</h2>
                 <br>
                 <ul>
-                    <li>Always Close your tags Properly.</li><br>
-                    <li>Use Lowercase for tags and attributes.</li><br>
-                    <li>Add alt attribute for Images.</li><br>
-                    <li>Use Semantic Tags.</li><br>
-                    <li>Proper Heading Hierarchy.</li><br>
-                    <li>External Stylesheer for.</li><br>
+                    <li>Always use external CSS for maintainability.</li><br>
+                    <li>Use reset.css or normalize.css to fix browser inconsistencies.</li><br>
+                    <li>Prefer Flexbox and Grid for layout building.</li> <br>
+                    <li>Always use responsive units like em, rem, %, vw, vh.</li><br>
                 </ul>
-        
-                <br>
-                <br>
-                <hr>
-
             </div>
 
-
-            <div class="content" data-aos="zoom-in"  data-aos-duration="1500"   data-aos-easing="ease-in-sine">
-                <h2>10. Cheat Sheet Summary Table</h2>
-                <table class="line-numbers">
-                    <tbody>
-                        <tr>
-                            <th>Tag</th>
-                            <th>Usage</th>
-                            <th>Example</th>
-                        </tr>
-                        <tr>
-                            <td>
-                                <code class="language-html">
-                            &lt;h1&gt;-&lt;h6&gt;
-                        </code>
-                            </td>
-                            <td>Headings</td>
-                            <td>
-                                <code class="language-html">
-                            &lt;h1&gt;Main Title&lt;/h1&gt;
-                        </code>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <code class="language-html">
-                            &lt;p&gt;
-                        </code>
-                            </td>
-                            <td>Paragraph</td>
-                            <td>
-                                <code class="language-html">
-                            &lt;p&gt;Some Text&lt;/p&gt;
-                        </code>
-                            </td>
-                        <tr>
-                            <td>
-                                <code class="language-html">
-                            &lt;a&gt;
-                        </code>
-                            </td>
-                            <td>Link</td>
-                            <td>
-                                <code class="language-html">
-                            &lt;a herf="#"&gt;Click Me&lt;/a&gt;
-                        </code>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                <code class="language-html">
-                            &lt;img&gt;
-                        </code>
-                            </td>
-                            <td>Image</td>
-                            <td>
-                                <code class="language-html">
-                            &lt;img src="pic.jpg" alt="pic"&gt;
-                        </code>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                <code class="language-html">
-                                &lt;ul&gt;/&lt;ol&gt;
-                            </code>
-                            </td>
-                            <td>Lists</td>
-                            <td>
-                                <code class="language-html">
-                                &lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;
-                            </code>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                <code class="language-html">
-                            &lt;form&gt;
-                        </code>
-                            </td>
-                            <td>Forms</td>
-                            <td>
-                                <code class="language-html">
-                            &lt;form&gt;...&lt;/form&gt;
-                        </code>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                <code class="language-html">
-                            &lt;table&gt;
-                        </code>
-                            </td>
-                            <td>Table</td>
-                            <td>
-                                <code class="language-html">
-                            &lt;table&gt;...&lt;/table&gt;
-                        </code>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                <code class="language-html">
-                            &lt;header&gt;, &lt;main&gt;,&lt;footer&gt;
-                        </code>
-                            </td>
-                            <td>Page Layout</td>
-                            <td>
-                                <code class="language-html">
-                            &lt;header&gt;...&lt;/header&gt;,
-                            &lt;main&gt;...&lt;/main&gt;,
-                            &lt;footer&gt;...&lt;/footer&gt;
-                        </code>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                <code class="language-html">
-                                &lt;video&gt;,&lt;audio&gt;
-                            </code>
-                            </td>
-                            <td>Media</td>
-                            <td>
-                                <code class="language-html">
-                                &lt;video&gt;...&lt;/video&gt;,
-                                &lt;audio&gt;...&lt;/audio&gt;
-                            </code>
-                            </td>
-                        </tr>
-
-                    </tbody>
-                </table>
+            <div class="content" data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-sine">
+                <br>
+                <h2>12. Conclusion</h2>
+                <br>
+                <p>This cheat sheet gives a quick "grab-and-go" summary for anyone building modern, responsive, and stylish websites using CSS3. Whether you're working professionally or learning, keep it handy!</p>
                 <br>
                 <br>
-                <hr>
-
             </div>
 
+            <h2>End of CSS Cheat Sheet</h2>
         </div>
 
-        <h2>End Of Cheat Sheet</h2> 
     </main>
     <footer>
         <div class="logo">
@@ -515,7 +545,7 @@ p{
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-  AOS.init();
+    AOS.init();
 </script>
 
 
